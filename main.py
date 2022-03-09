@@ -41,9 +41,9 @@ def cambiar_ratio():
     ratio.append(valor)
     valor = float(input(f'Inserta el valor ratio del agua (Segundo valor: '))
     ratio.append(valor)
-    print(f'Ratio actual: {ratio[0]}/{ratio[1]}')
+    print(f'\nRatio actual: {int(ratio[0])}/{int(ratio[1])}')
     sleep(1)
-    print('Regresando al menu en: 3')
+    print('\nRegresando al menu en: 3')
     sleep(1)
     print('Regresando al menu en: 2')
     sleep(1)
@@ -69,21 +69,13 @@ def menu():
         print('\n')
         print(f'RESULTADO'.center(15,'-'))
         print(f'Cantidad de cafe a usar: {calcular_cafe(agua, ratio)} gramos.\n')
-        opc = int(input(f'''Seleccionar opción:
-                1. Volver al menú
-                2. Salir
-              '''))
-        if opc == 1:
-            print('Regresando al menu en: 3')
-            sleep(1)
-            print('Regresando al menu en: 2')
-            sleep(1)
-            print('Regresando al menu en: 1')
-            sleep(1)
-            pass
-        elif opc == 2:
-            exit()
-       
+        print('Regresando al menu en: 3')
+        sleep(1)
+        print('Regresando al menu en: 2')
+        sleep(1)
+        print('Regresando al menu en: 1')
+        sleep(1)
+        menu()
                 
     elif opcion == 2:
         borrar_pantalla()
